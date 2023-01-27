@@ -3,10 +3,14 @@ import "./App.css";
 
 function App() {
   const [name, setName] = useState("");
-  const [age, setage] = useState(0);
+  const [age, setAge] = useState(0);
   const [country, setCountry] = useState("");
   const [position, setPosition] = useState("");
   const [wage, setWage] = useState(0);
+
+  const displayInfo = () => {
+    console.log(name + age + country + position + wage);
+  };
 
   return (
     <div className='App'>
@@ -21,7 +25,7 @@ function App() {
         <input type='text' onChange={(evt) => setPosition(evt)} />
         <label>Wage (year):</label>
         <input type='number' onChange={(evt) => setWage(evt)} />
-        <button>Add Employee</button>
+        <button onClick={displayInfo}>Add Employee</button>
       </div>
     </div>
   );
