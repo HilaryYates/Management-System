@@ -1,0 +1,15 @@
+.App {
+  display: "flex";
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info input {
+  width: 15%;
+  height: 30%;
+}
