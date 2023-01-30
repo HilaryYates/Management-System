@@ -43,7 +43,16 @@ function App() {
         <button onClick={addEmployee}>Add Employee</button>
         <button onClick={getEmployees}>Show Employees</button>
         {employeeList.map((employee) => {
-          return <div>{employee.name}</div>;
+          return (
+            <div>
+              {" "}
+              <h3>Name: {employee.name}</h3>
+              <h3>Age: {employee.age}</h3>
+              <h3>Country: {employee.country}</h3>
+              <h3>Position: {employee.position}</h3>
+              <h3>Wage: {employee.wage}</h3>
+            </div>
+          );
         })}
       </div>
     </div>
